@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="chosen.css">
+    <link rel="stylesheet" href="slick.css">
 </head>
 <body>
 
@@ -18,16 +20,16 @@
                 <nav class="menu">
                     <ul class="menu-list dflex">
                         <li>
-                            <a href="#">АФИША</a>
+                            <a href="#afisha" class="menu-js">АФИША</a>
                         </li>
                         <li>
-                            <a href="#">ГОЛОСОВАНИЕ</a>
+                            <a href="#golos" class="menu-js">ГОЛОСОВАНИЕ</a>
                         </li>
                         <li>
-                            <a href="#">ВЕСЕЛЫЕ ИСТОРИИ </a>
+                            <a href="#stories" class="menu-js">ВЕСЕЛЫЕ ИСТОРИИ </a>
                         </li>
                         <li>
-                            <a href="#">РЕГИСТРАЦИЯ</a>
+                            <a href="#registr" class="menu-js">РЕГИСТРАЦИЯ</a>
                         </li>
                     </ul>
                 </nav>
@@ -59,10 +61,10 @@
         </div>
     </div>
 
-    <div class="vertical-slide">
+    <div class="vertical-slide" id="afisha">
         <div class="container dflex">
             <div class="vertical-slide-left">
-                <p>наши гости из питера группа <span>runnet'ки</span>с новым хитом</p>
+                <p>наши гости из питера группа <span>runnet'ки</span> <br>с новым хитом</p>
                 <img src="img/color.png" alt="color" />
             </div>
             <div class="vertical-slide-right">
@@ -71,71 +73,336 @@
         </div>
     </div>
 
-    <div class="fun-stories">
-        <div class="content-block-head">
+    <div class="fun-stories" id="stories">
+        <div class="content-block-head fun-head">
             <span>веселые истории</span>
         </div>
         <div class="container">
+            <!--<div class="arrow-left">-->
+                <!--<img src="img/slider-left-white.png" alt="">-->
+            <!--</div>-->
 
+            <div class="media-wrap">
+                <div class="media-block">
+                    <div class="media-block-row dflex">
+                        <div class="media-block-video">
+                            <img src="img/video.png" alt="" />
+                        </div>
+
+                        <div class="flip-container">
+                            <div class="flipper">
+                                <div class="front">
+                                    <img src="img/history-3.png" alt="">
+                                </div>
+                                <div class="back">
+                                    <img src="img/histories.png" alt="" />
+                                    <span>Корпоратив 2016</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="media-block-row dflex">
+
+                        <div class="flip-container">
+                            <div class="flipper">
+                                <div class="front">
+                                    <img src="img/history-1.jpg" alt="">
+                                </div>
+                                <div class="back">
+                                    <img src="img/histories.png" alt="" />
+                                    <span>Корпоратив 2016</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-container">
+                            <div class="flipper">
+                                <div class="front">
+                                    <img src="img/history-2.png" alt="">
+                                </div>
+                                <div class="back">
+                                    <img src="img/histories.png" alt="" />
+                                    <span>Корпоратив 2016</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="flip-container">
+                            <div class="flipper">
+                                <div class="front">
+                                    <img src="img/history-3.png" alt="">
+                                </div>
+                                <div class="back">
+                                    <img src="img/histories.png" alt="" />
+                                    <span>Корпоратив 2016</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="media-block">
+                    <div class="media-block-row dflex">
+                        <div class="media-block-video">
+                            <img src="img/video.png" alt="" />
+                        </div>
+
+                        <div class="flip-container">
+                            <div class="flipper">
+                                <div class="front">
+                                    <img src="img/history-3.png" alt="">
+                                </div>
+                                <div class="back">
+                                    <img src="img/histories.png" alt="" />
+                                    <span>Корпоратив 2016</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="media-block-row dflex">
+
+                        <div class="flip-container">
+                            <div class="flipper">
+                                <div class="front">
+                                    <img src="img/history-1.jpg" alt="">
+                                </div>
+                                <div class="back">
+                                    <img src="img/histories.png" alt="" />
+                                    <span>Корпоратив 2016</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-container">
+                            <div class="flipper">
+                                <div class="front">
+                                    <img src="img/history-2.png" alt="">
+                                </div>
+                                <div class="back">
+                                    <img src="img/histories.png" alt="" />
+                                    <span>Корпоратив 2016</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="flip-container">
+                            <div class="flipper">
+                                <div class="front">
+                                    <img src="img/history-3.png" alt="">
+                                </div>
+                                <div class="back">
+                                    <img src="img/histories.png" alt="" />
+                                    <span>Корпоратив 2016</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="media-block">
+                    <div class="media-block-row dflex">
+                        <div class="media-block-video">
+                            <img src="img/video.png" alt="" />
+                        </div>
+
+                        <div class="flip-container">
+                            <div class="flipper">
+                                <div class="front">
+                                    <img src="img/history-3.png" alt="">
+                                </div>
+                                <div class="back">
+                                    <img src="img/histories.png" alt="" />
+                                    <span>Корпоратив 2016</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="media-block-row dflex">
+
+                        <div class="flip-container">
+                            <div class="flipper">
+                                <div class="front">
+                                    <img src="img/history-1.jpg" alt="">
+                                </div>
+                                <div class="back">
+                                    <img src="img/histories.png" alt="" />
+                                    <span>Корпоратив 2016</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-container">
+                            <div class="flipper">
+                                <div class="front">
+                                    <img src="img/history-2.png" alt="">
+                                </div>
+                                <div class="back">
+                                    <img src="img/histories.png" alt="" />
+                                    <span>Корпоратив 2016</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="flip-container">
+                            <div class="flipper">
+                                <div class="front">
+                                    <img src="img/history-3.png" alt="">
+                                </div>
+                                <div class="back">
+                                    <img src="img/histories.png" alt="" />
+                                    <span>Корпоратив 2016</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!--<div class="arrow-right">-->
+                <!--<img src="img/slider-right-white.png" alt="">-->
+            <!--</div>-->
         </div>
     </div>
 
-
-    <div class="job-content">
-        <div class="content-block-head">
+    <div class="job-content" id="golos">
+        <div class="content-block-head golos">
             <span>проголосуй за любимых сотрудников !</span>
         </div>
         <div class="container">
-        </div>
-    </div>
-
-
-    <div class="form-block">
-        <div class="container">
-            <p class="form-block-label">
-                Зарегистрируйся, и мы вышлем тебе координаты места встречи
-            </p>
-            <form action="" class="form-block-form">
-                <input type="text" placeholder="ФИО">
-
-                <input type="text" placeholder="e-MAIL">
-
-                <button type="submit" class="form-block-btn">
-                    <span>регистрация</span>
-                </button>
-            </form>
-        </div>
-    </div>
-
-    <div class="google-block">
-        <div class="container">
-            <h3>оригинальные призы от </h3>
-
-            <img src="" alt="Googel">
-
-            <h4>не более одного IP адреса в руки</h4>
-        </div>
-    </div>
-
-    <footer class="footer">
-        <div class="container">
-            <h3>Наши партнеры</h3>
-            <div class="partner-block dflex">
-                <div class="partner-block__item">
-                    <img src="img/parters1.png" alt="">
+            <div class="job-row dflex">
+                <div class="select-block">
+                    <select class="chosen-select">
+                        <option value="">выбери отдел</option>
+                        <option value="">выбери отдел2</option>
+                        <option value="">выбери отдел3</option>
+                    </select>
                 </div>
-                <div class="partner-block__item">
-                    <img src="img/parters2.png" alt="">
+
+                <img class="click-job" src="img/job.png" alt="">
+            </div>
+
+            <div class="photo-block">
+                <div class="photo-row dflex">
+                    <div class="photo-cell">
+                        <img src="img/worker1.png" alt="">
+                    </div>
+                    <div class="photo-cell">
+                        <img src="img/worker2.png" alt="">
+                    </div>
+                    <div class="photo-cell">
+                        <img src="img/worker3.png" alt="">
+                    </div>
+                    <div class="photo-cell">
+                        <img src="img/worker4.png" alt="">
+                    </div>
+                    <div class="photo-cell">
+                        <img src="img/worker5.png" alt="">
+                    </div>
                 </div>
-                <div class="partner-block__item">
-                    <img src="img/partners3.png" alt="">
+
+                <div class="photo-row dflex">
+                    <div class="photo-cell">
+                        <img src="img/worker6.png" alt="">
+                    </div>
+                    <div class="photo-cell">
+                        <img src="img/worker7.png" alt="">
+                    </div>
+                    <div class="photo-cell">
+                        <img src="img/worker8.png" alt="">
+                    </div>
+                    <div class="photo-cell">
+                        <img src="img/worker9.png" alt="">
+                    </div>
+                    <div class="photo-cell">
+                        <img src="img/worker10.png" alt="">
+                    </div>
                 </div>
+
             </div>
         </div>
-    </footer>
+    </div>
 </div>
 
 
-<script src="assets/js/bundle.js"></script>
+<div class="form-block" id="registr">
+    <div class="container">
+        <p class="form-block-label">
+            Зарегистрируйся, и мы вышлем тебе координаты места встречи
+        </p>
+        <form action="" class="form-block-form">
+            <input type="text" placeholder="ФИО">
+
+            <input type="text" placeholder="e-MAIL">
+
+            <button type="submit" class="form-block-btn">
+                <span>регистрация</span>
+            </button>
+        </form>
+    </div>
+</div>
+
+<div class="google-block">
+    <div class="container">
+        <h3>оригинальные призы от </h3>
+
+        <img src="" alt="Googel">
+
+        <h4>не более одного IP адреса в руки</h4>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <h3>Наши партнеры</h3>
+        <div class="partner-block dflex">
+            <div class="partner-block__item">
+                <img src="img/parters1.png" alt="">
+            </div>
+            <div class="partner-block__item">
+                <img src="img/parters2.png" alt="">
+            </div>
+            <div class="partner-block__item">
+                <img src="img/partners3.png" alt="">
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="js/jquery.js"></script>
+<script src="js/chosen.jquery.js"></script>
+<script src="js/slick.js"></script>
+
+<script>
+    $(".chosen-select").chosen({disable_search_threshold: 10});
+
+
+    $(".menu-js").on("click", function(e){
+        var anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $(anchor.attr('href')).offset().top
+        }, 1000);
+        e.preventDefault();
+        return false;
+    });
+
+    $('.media-wrap').slick();
+
+</script>
+
+
 </body>
 </html>

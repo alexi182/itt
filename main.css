@@ -145,7 +145,12 @@ a {
     line-height: 40px;
     text-transform: uppercase; }
 .vertical-slide .container p span {
-    color: #ef4825; }
+    color: #ef4825;
+    font-family: 'Roboto Slab';
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+}
 
 .vertical-slide-right img {
     position: relative;
@@ -154,7 +159,7 @@ a {
 .fun-stories {
     background: #ffffff url("img/bg6.png") no-repeat;
     background-size: cover;
-    padding: 50px 0; }
+    padding: 50px 0 100px; }
 
 .content-block-head {
     background: #ef4825;
@@ -309,7 +314,7 @@ a {
 
 @font-face {
     font-family: 'Roboto';
-    src: local("Roboto Italic"), local("Roboto-Italic"), url("Robotoitalic.woff2") format("woff2"), url("Robotoitalic.woff") format("woff"), url("Robotoitalic.ttf") format("truetype");
+    src: local("Roboto Italic"), local("Roboto-Italic"), url("fonts/Robotoitalic.woff2") format("woff2"), url("fonts/Robotoitalic.woff") format("woff"), url("fonts/Robotoitalic.ttf") format("truetype");
     font-weight: 400;
     font-style: italic; }
 
@@ -349,4 +354,216 @@ a {
     font-weight: 900;
     font-style: italic; }
 
+@font-face {
+    font-family: 'Roboto Slab';
+    src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'), url('fonts/robotoslabregular.woff2') format('woff2'), url('fonts/robotoslabregular.woff') format('woff'), url('fonts/robotoslabregular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
 /*# sourceMappingURL=main.css.map */
+
+.media-wrap .slick-slide {
+    text-align: center;
+}
+
+.media-wrap .slick-list {
+    width: 1005px;
+    margin: 0 auto;
+}
+
+.media-wrap .slick-next {
+    width: 68px;
+    height: 68px;
+    background: url("img/slider-left-white.png");
+    border: 0;
+    cursor: pointer;
+    outline: 0;
+    position: absolute;
+    top: 40%;
+}
+
+.media-wrap .slick-prev {
+    width: 68px;
+    height: 68px;
+    background: url("img/slider-right-white.png");
+    border: 0;
+    cursor: pointer;
+    outline: 0;
+    position: absolute;
+    top: 40%;
+    right:0;
+}
+
+.media-block {
+    width: 1005px!important;
+    margin: 0 auto;
+}
+
+.fun-head {
+    width: 458px;
+    position: relative;
+    top: -89px;
+}
+
+.fun-stories .container {
+    position: relative;
+}
+
+.fun-stories .container .arrow-right {
+    position: absolute;
+    top: 40%;
+    right: 0;
+    cursor: pointer;
+}
+
+
+.fun-stories .container .arrow-left {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    cursor: pointer;
+}
+
+.media-block-row {
+    justify-content: space-between;
+}
+
+.media-block-back {
+    position: relative;
+    background: #222534;
+}
+
+.media-block-video {
+    width: 669px;
+}
+
+.media-block-video img {
+    width: 100%;
+}
+
+.media-block-row span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.media-block-photo {
+    position: relative;
+}
+
+.photo-row {
+    justify-content: space-around;
+    margin-bottom: 75px;
+}
+
+.photo-cell {
+    width: 206px;
+    height: 255px;
+}
+
+.photo-cell:nth-of-type(2) {
+    position: relative;
+    top: 50px;
+}
+
+.photo-cell img {
+    width: 100%;
+}
+
+.job-content .container {
+    position: relative;
+}
+
+.click-job {
+
+}
+
+.job-row {
+    justify-content: space-between;
+}
+
+.golos {
+    position: relative;
+    top: -40px;
+}
+
+
+/* entire container, keeps perspective */
+.flip-container {
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+/*  UPDATED! flip the pane when hovered */
+.flip-container:hover .back {
+    transform: rotateY(0deg);
+}
+
+.flip-container:hover .front {
+    transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+    width: 332px;
+    height: 332px;
+}
+
+/* flip speed goes here */
+.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+    backface-visibility: hidden;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/*  UPDATED! front pane, placed above back */
+.front {
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+    background: #222534;
+    transform: rotateY(-180deg);
+}
+
+.chosen-container {
+    width: 918px!important;
+    height: 51px;
+    background-color: #ffffff;
+}
+
+.chosen-container-single .chosen-single {
+    height: 51px!important;
+    background: transparent!important;
+    border: 1px solid #cccccc!important;
+    border-radius: 0!important;
+}
+
+.chosen-container-single .chosen-single span {
+    color: #999999;
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 50px;
+    text-transform: uppercase;
+
+}
